@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentacion Tienda</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="indexV1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--FIRESTORE-->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+</head>
+
+<body>
+    <div class="link-pagina">
+        <a href="panel.html">Visita tu panel</a>
+    </div>
+    <div class="link-pagina">
+        <a href="info-negocio.html">Info del Negocio</a>
+    </div>
+
+    <!--Nombre del Negocio-->
+    <div class="identidad-negocio" id="identidad-negocio">
+        <div class="uno" id="imagen-negocio">
+        </div>
+        <div class="dos" id="datos-negocio"></div>
+    </div>
+
+
+    <!--  
+    <h2>Mi Catalogo</h2>
+    <div class="container-articulos" id="container-articulos">
+        <div class="articulo">
+              // Plantilla para diseño 
+            <div class="imagen-articulo"><img
+                    src="https://http2.mlstatic.com/D_NQ_NP_608240-CBT44568441485_012021-O.webp" alt="" id="imagen"
+                    class="imagen">
+            </div>
+            <div class="nombre-articulo" id="articulo"> Hola Nombre Hola Nombre Hola Nombre Hola Nombre Hola Nombre Hola
+                Nombre </div>
+            <div class="descripcion-articulo" id="descripcion">Descripcion</div>
+            <div class="precio-articulo" id="precio">Precio</div>
+
+            <div class="area-whats"> <button id="btn-whats" class="btn-whats"> Pidelo por Whats </button> </div>
+
+          
+        </div>
+    </div>-->
+
+    <div class="area-controles-carrito" id="control-area-carrito">
+        <label>Aqui los controles</label>
+        <div class="totales" id="totales"></div>
+    </div>
+
+    <div class="area-carrito" id="area-carrito">
+        <label>Aqui el area de carriro</label>
+
+        <h2>Mi Carrito</h2>
+        <div class="carrito" id="carrito">
+        </div>
+
+        <div class="area-libre" id="vaciar">
+            <button id="boton-vaciar"></button>
+        </div>
+
+        <h2>Pedir por Whats</h2>
+        <div class="ordenar" id="ordenar">
+            <button id="btn-whats"></button>
+        </div>
+    </div>
+
+
+    <h2>Listado de Articulos</h2>
+    <div class="articulos" id="articulos">
+    </div>
+
+    <!---href="https://api.whatsapp.com/send?
+        phone=5195508107&text=Hola%21%20Quisiera
+        %20m%C3%A1s%20informaci%C3%B3n%20
+        sobre%20Varela%202."-->
+
+    <div><a id="boton-whats-area" class="float" target="_blank">
+
+        </a></div>
+
+
+    <script src="index.js"></script>
+
+    <script src="indexV1.js"></script>
+</body>
+
+</html>
